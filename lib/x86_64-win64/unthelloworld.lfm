@@ -1,0 +1,51 @@
+object frmMain: TfrmMain
+  Left = 289
+  Height = 153
+  Top = 283
+  Width = 407
+  AlphaBlend = True
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Hello world!'
+  ClientHeight = 153
+  ClientWidth = 407
+  OnCreate = FormCreate
+  LCLVersion = '1.0.12.0'
+  object AlphaTrackBar: TTrackBar
+    Left = 16
+    Height = 40
+    Hint = 'Drag the slider to set alpha transparency value.'
+    Top = 104
+    Width = 373
+    Max = 255
+    OnChange = AlphaTrackBarChange
+    Position = 0
+    TickMarks = tmBoth
+    TickStyle = tsNone
+    TabOrder = 0
+  end
+  object lblCurrentAlphaInfo: TLabel
+    Left = 27
+    Height = 16
+    Top = 27
+    Width = 110
+    Caption = 'Current Alpha Value:'
+    ParentColor = False
+  end
+  object lblAlphaValue: TLabel
+    Left = 152
+    Height = 16
+    Top = 27
+    Width = 32
+    Caption = 'Alpha'
+    ParentColor = False
+  end
+  object blbTrackBarInfo: TLabel
+    Left = 24
+    Height = 31
+    Top = 64
+    Width = 357
+    Caption = 'Use the slider below to set the opacity:'#13#10'0 (Min)                                                                                         255 (Max)'
+    ParentColor = False
+  end
+end
