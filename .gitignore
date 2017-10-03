@@ -103,3 +103,8 @@ lib/
 fp.ini
 fp.cfg
 fp.dsk
+
+# Main executable
+HelloWorld
+HelloWorld.exe
+HelloWorld.app
